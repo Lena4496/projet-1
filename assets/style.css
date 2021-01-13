@@ -1,0 +1,93 @@
+:root {
+  --main-bg-color: #070707;
+  --text-font: 'JetBrains Mono', monospace;
+  --title-font: 'Tomorrow', sans-serif;
+  --light-grey-color: rgba(255, 255, 255, 0.726);
+}
+
+.main-bg {
+  background-color: var(--main-bg-color);
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-image: url("../assets/IMG/okokokmodif.png");
+  background-color: var(--main-bg-color);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: white;
+}
+
+body #first {
+  position: absolute !important;
+}
+
+body #first h1 {
+  font-family: var(--title-font);
+  margin-left: 3rem !important;
+  font-weight: 700;
+  top: 40% !important;
+}
+
+body #first h2 {
+  font-family: var(--text-font);
+  margin-left: 3rem !important;
+  font-weight: 100 !important;
+  color: var(--light-grey-color);
+}
+
+body #SECOND {
+  -webkit-animation: fadeInAnimation ease 0.4s;
+          animation: fadeInAnimation ease 0.4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--light-grey-color);
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-family: var(--text-font);
+  font-weight: 100;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 350ms ease-in-out;
+  transition: -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+  font-weight: 200 !important;
+}
+/*# sourceMappingURL=style.css.map */
