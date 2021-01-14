@@ -5,6 +5,10 @@
   --light-grey-color: rgba(255, 255, 255, 0.726);
 }
 
+:root body {
+  height: 100%;
+}
+
 .main-bg {
   background-color: var(--main-bg-color);
 }
@@ -27,15 +31,17 @@
   }
 }
 
+@media screen and (max-width: 724px) {
+  body {
+    background-image: url("../assets/IMG/sable6000.jpg") !important;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
-  -webkit-animation: fadeInAnimation ease 2s;
-          animation: fadeInAnimation ease 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   background-image: url("../assets/IMG/okokokmodif.png");
   background-color: var(--main-bg-color);
   background-size: 100%;
@@ -45,21 +51,30 @@ body {
 }
 
 body #first {
-  position: absolute !important;
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 body #first h1 {
   font-family: var(--title-font);
   margin-left: 3rem !important;
+  margin-right: 3rem !important;
   font-weight: 700;
   top: 40% !important;
+  width: auto;
 }
 
 body #first h2 {
   font-family: var(--text-font);
   margin-left: 3rem !important;
+  margin-right: 3rem !important;
   font-weight: 100 !important;
   color: var(--light-grey-color);
+  width: auto;
 }
 
 body #SECOND {
@@ -69,6 +84,7 @@ body #SECOND {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  top: 50rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
